@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store</title>
+    <style>
+        body {
+            background-image: url('back.avif'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        header {
+            background-color: #1c1c1c;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            color: #ff5c00;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .game-card {
+            background-color: #1c1c1c;
+            border: 1px solid #ff5c00;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            width: calc(25% - 40px);
+            text-align: center;
+            transition: transform 0.2s;
+            color: #fff;
+        }
+
+        .game-card:hover {
+            transform: scale(1.05);
+        }
+
+        .game-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .game-title {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .game-description {
+            font-size: 1rem;
+        }
+
+        .game-price {
+            font-size: 1.25rem;
+            color: #ff5c00;
+            margin-top: 10px;
+        }
+
+        .buy-button {
+            background-color: #ff5c00;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Game Store</h1>
+    </header>
+    <div class="container">
+        <div class="game-card">
+            <img src="gta.png" alt="GTA V">
+            <h2 class="game-title">GTA V</h2>
+            <p class="game-description">Explore the open world of Los Santos in this action-packed game.</p>
+            <p class="game-price">$59.99</p>
+            <button class="buy-button">Buy</button>
+        </div>
+         <div class="game-card">
+            <img src="elden.jpg" alt="Elden Ring">
+            <h2 class "game-title">Elden Ring</h2>
+            <p class="game-description">Embark on a dark fantasy adventure in the world of Elden Ring.</p>
+            <p class="game-price">$69.99</p>
+            <button class="buy-button">Buy</button>
+        </div>
+        <div class="game-card">
+            <img src="spider.jpg" alt="Marvel's Spiderman">
+            <h2 class="game-title">Marvel's Spiderman 2</h2>
+            <p class="game-description">Swing through New York City as the friendly neighborhood Spider-Man.</p>
+            <p class="game-price">$49.99</p>
+            <button class="buy-button">Buy</button>
+        </div>
+        <div class="game-card">
+            <img src="cyber.jpg" alt="Cyberpunk">
+            <h2 class="game-title">Cyberpunk</h2>
+            <p class="game-description">Immerse yourself in the futuristic world of Cyberpunk.</p>
+            <p class="game-price">$39.99</p>
+            <button class="buy-button">Buy</button>
+        </div>
+        <div class="game-card">
+            <img src="fh5.jpg" alt="Forza Horizon 5">
+            <h2 class="game-title">Forza Horizon 5</h2>
+            <p class="game-description">Race through stunning open-world environments in Forza Horizon 5.</p>
+            <p class="game-price">$69.99</p>
+            <button class="buy-button">Buy</button>
+        </div>
+        <div class="game-card">
+            <img src="rdr2.webp" alt="Red Dead Redemption 2">
+            <h2 class="game-title">Red Dead Redemption 2</h2>
+            <p class="game-description">Experience the wild west in this open-world adventure.</p>
+            <p class="game-price">$49.99</p>
+            <button class="buy-button">Buy</button>
+        </div>
+    </div>
+</body>
+</html>
